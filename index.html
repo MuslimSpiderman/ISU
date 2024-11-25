@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Analysis Program</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>ISU ARTIFACT - Geometry Analysis</h1>
+    </header>
+    <main>
+        <form id="geometryForm">
+            <h2>Volume & Surface Area</h2>
+            <!-- Shape Selection -->
+            <label for="shape">Select Shape:</label>
+            <select id="shape" name="shape" onchange="updateDimensionInputs()"> 
+                <option value="cube">Cube</option>
+                <option value="sphere">Sphere</option>
+                <option value="cylinder">Cylinder</option>
+                <option value="cone">Cone</option>
+                <option value="prism">Prism</option>
+                <option value="pyramid">Pyramid</option>
+            </select>
+            <div id="shapeInputs" class="dimension-inputs hidden"></div> <!-- Dynamic inputs here -->
+            <button type="button" onclick="calculateVolumeSurface()">Calculate</button>
+            <div id="volumeResult" class="result"></div>
+            <div id="volumeFormula" class="formula"></div>
+        </form>
+
+        <form id="pythagForm">
+            <h2>Pythagorean Theorem</h2>
+            <!-- Side A and B inputs -->
+            <label for="sideA">Enter side A:</label>
+            <input type="text" id="sideA" name="sideA" placeholder="e.g., 3">
+            <label for="sideB">Enter side B:</label>
+            <input type="text" id="sideB" name="sideB" placeholder="e.g., 4">
+            <button type="button" onclick="calculateHypotenuse()">Calculate Hypotenuse</button>
+            <div id="pythagResult" class="result"></div>
+            <div id="pythagFormula" class="formula"></div>
+
+            <!-- Triangle Canvas -->
+            <canvas id="triangleCanvas" width="535" height="400"></canvas>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

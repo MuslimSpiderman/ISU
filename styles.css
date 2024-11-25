@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, rgba(33, 30, 46, 0.95), #242424);
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+main {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: rgba(33, 30, 46, 0.95);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label, p {
+    font-size: 1rem;
+    color: #242424;
+    margin-bottom: 10px;
+}
+
+select, input, button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+button {
+    background-color: rgba(33, 30, 46, 0.95);
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #242424;
+}
+
+.result {
+    font-size: 1.2rem;
+    color: #242424;
+    font-weight: bold;
+}
+
+.formula {
+    font-size: 1rem;
+    color: rgba(33, 30, 46, 0.7);
+    font-style: italic;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Add this CSS snippet to style the canvas */
+#triangleCanvas {
+    border: 1px solid black;
+    margin-top: 20px;
+}
