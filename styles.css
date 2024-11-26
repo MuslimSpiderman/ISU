@@ -89,7 +89,6 @@ button:hover {
     display: none;
 }
 
-/* Add this CSS snippet to style the canvas */
 #triangleCanvas {
     border: 1px solid black;
     margin-top: 20px;
